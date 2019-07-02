@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # anke
 make a big designer
 =======
