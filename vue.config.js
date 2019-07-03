@@ -6,8 +6,7 @@
 // const path = require("path");
 // const vConsolePlugin = require("vconsole-webpack-plugin"); // 引入 移动端模拟开发者工具 插件 （另：https://github.com/liriliri/eruda）
 // const CompressionPlugin = require("compression-webpack-plugin"); //Gzip
-// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-//   .BundleAnalyzerPlugin; //Webpack包文件分析器
+// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin; //Webpack包文件分析器
 // const baseUrl = process.env.NODE_ENV === "production" ? "/static/" : "/"; //font scss资源路径 不同环境切换控制
 
 module.exports = {
