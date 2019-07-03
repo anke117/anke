@@ -4,9 +4,6 @@
  * *@describe vue-cli 3.x配置文件
  */
 // const path = require("path");
-// const vConsolePlugin = require("vconsole-webpack-plugin"); // 引入 移动端模拟开发者工具 插件 （另：https://github.com/liriliri/eruda）
-// const CompressionPlugin = require("compression-webpack-plugin"); //Gzip
-// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin; //Webpack包文件分析器
 // const baseUrl = process.env.NODE_ENV === "production" ? "/static/" : "/"; //font scss资源路径 不同环境切换控制
 
 module.exports = {
@@ -96,7 +93,8 @@ module.exports = {
       }
     }
   },
-  // webpack-dev-server 相关配置 https://webpack.js.org/configuration/dev-server/
+  // 对本地服务器进行相应配置
+  // webpack-dev-server 相关配置 https://webpack.docschina.org/configuration/dev-server/
   devServer: {
     // host: "localhost",
     host: "192.168.50.86", //anke本地IP
@@ -105,21 +103,6 @@ module.exports = {
     open: true, //配置自动启动浏览器  http://172.16.1.12:7071/rest/mcdPhoneBar/
     hotOnly: true, // 热更新
     proxy: null // 配置跨域处理,只有一个代理
-    // proxy: {
-    //   //配置自动启动浏览器
-    //   "/rest/*": {
-    //     target: "http://172.16.1.12:7071",
-    //     changeOrigin: true,
-    //     // ws: true,//websocket支持
-    //     secure: false
-    //   },
-    //   "/pbsevice/*": {
-    //     target: "http://172.16.1.12:2018",
-    //     changeOrigin: true,
-    //     //ws: true,//websocket支持
-    //     secure: false
-    //   }
-    // }
   },
 
   // 第三方插件配置 https://www.npmjs.com/package/vue-cli-plugin-style-resources-loader
