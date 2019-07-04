@@ -1,12 +1,7 @@
 <template>
   <div>
     <h1>index</h1>
-    <a href="view1.html">view1</a>
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    <a href="view2.html">view2</a>
+    <a href="message.html">view1</a>
   </div>
 </template>
 

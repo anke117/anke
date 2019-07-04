@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import message from '..message/message.vue'
+import message from './message.vue'
 import store from '@/store'
 import router from '@/router'
 import ElementUI from 'element-ui';
