@@ -22,14 +22,12 @@ module.exports = {
       entry: "src/pages/home/home.js", // page 的入口
       template: "src/pages/home/home.html", // 模板来源
       filename: "home.html", // 在 dist/home.html 的输出
-      title: "首页", // 当使用 title 选项时，template 中的 title 标签需要是 <title><%= htmlWebpackPlugin.options.title %></title>
-      chunks: ["chunk-vendors", "chunk-common", "home"] // 在这个页面中包含的块，默认情况下会包含提取出来的通用 chunk 和 vendor chunk。
+      chunks: ["chunk-vendors", "chunk-common", "index"] // 在这个页面中包含的块，默认情况下会包含提取出来的通用 chunk 和 vendor chunk。
     },
     message: {
       entry: "src/pages/message/message.js", // page 的入口
       template: "src/pages/message/message.html", // 模板来源
       filename: "message.html", // 在 dist/message.html 的输出
-      title: "消息提示", // 当使用 title 选项时，template 中的 title 标签需要是 <title><%= htmlWebpackPlugin.options.title %></title>
       chunks: ["chunk-vendors", "chunk-common", "message"] // 在这个页面中包含的块，默认情况下会包含提取出来的通用 chunk 和 vendor chunk。
     }
   },
@@ -83,9 +81,6 @@ module.exports = {
 				$baseUrl: "/";
 				@import '@/assets/scss/_common.scss';
 				`
-        //data: `
-        //$baseUrl: "/";
-        //`
       }
     }
   },
