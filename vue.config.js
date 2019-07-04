@@ -15,14 +15,14 @@ module.exports = {
   // eslint-loader 是否在保存的时候检查
   lintOnSave: true,
   //放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目录。
-  assetsDir: "static",
+  // assetsDir: "static",
   //以多页模式构建应用程序。
   pages: {
     home: {
       entry: "src/pages/home/home.js", // page 的入口
       template: "src/pages/home/home.html", // 模板来源
       filename: "home.html", // 在 dist/home.html 的输出
-      chunks: ["chunk-vendors", "chunk-common", "index"] // 在这个页面中包含的块，默认情况下会包含提取出来的通用 chunk 和 vendor chunk。
+      chunks: ["chunk-vendors", "chunk-common", "home"] // 在这个页面中包含的块，默认情况下会包含提取出来的通用 chunk 和 vendor chunk。
     },
     message: {
       entry: "src/pages/message/message.js", // page 的入口
